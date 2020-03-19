@@ -5,30 +5,30 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class CityInfo {
     
     @JsonProperty("area_km2")
-    private String area;
+    private String areaCity;
     
     @JsonProperty("codigo_ibge")
     private String ibgeCodeCity;
 
-    public String getArea() {
-        return area;
+    public String getAreaCity() {
+        return areaCity;
     }
 
-    public void setArea(String area) {
-        this.area = area;
+    public void setAreaCity(String area) {
+        this.areaCity = area;
     }
 
-    public String getIbgeCode() {
+    public String getIbgeCodeCity() {
         return ibgeCodeCity;
     }
 
-    public void setIbgeCode(String ibgeCode) {
-        this.ibgeCodeCity = ibgeCode;
+    public void setIbgeCodeCity(String ibgeCodeCity) {
+        this.ibgeCodeCity = ibgeCodeCity;
     }
 
     @Override
     public String toString() {
-      return "CityInfo [area=" + area + ", ibgeCode=" + ibgeCodeCity + "]";
+      return "CityInfo [areaCity=" + areaCity + ", ibgeCityCode=" + ibgeCodeCity + "]";
     }
     
 }

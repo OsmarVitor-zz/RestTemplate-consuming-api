@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class StateInfo {
 
   @JsonProperty("area_km2")
-  private String area;
+  private String areaState;
 
   @JsonProperty("codigo_ibge")
   private String ibgeCodeState;
@@ -13,12 +13,12 @@ public class StateInfo {
   @JsonProperty("nome")
   private String name;
 
-  public String getArea() {
-    return area;
+  public String getAreaState() {
+    return areaState;
   }
 
-  public void setArea(String area) {
-    this.area = area;
+  public void setAreaState(String areaState) {
+    this.areaState = areaState;
   }
 
   public String getIbgeCode() {
@@ -39,7 +39,7 @@ public class StateInfo {
 
   @Override
   public String toString() {
-    return "StateInfo [area=" + area + ", ibgeCode=" + ibgeCodeState + ", name=" + name + "]";
+    return "StateInfo [areaSate=" + areaState + ", ibgeCode=" + ibgeCodeState + ", name=" + name + "]";
   }
 
 }

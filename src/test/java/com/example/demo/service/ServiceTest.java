@@ -12,13 +12,14 @@ import com.example.demo.model.Address;
 @SpringBootTest
 public class ServiceTest {
 
-  @Autowired 
+  @Autowired
   ConsumerPostmonApiService service;
-  
+
   @Test
-  public void shouldSaveAddressOnDatabase() throws Exception{
-   Address address = service.consumer("14680000");
-   System.out.println("------------> endereco " + address);
+  public void shouldSaveAddressOnDatabase() throws Exception {
+    Address address = service.consumer("14680000");
+    service.saveAddress(address);
+   
   }
-  
- }
+
+}
